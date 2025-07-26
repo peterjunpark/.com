@@ -1,43 +1,43 @@
 :root {
-	--base: #191724;
-	--surface: #1f1d2e;
-	--overlay: #26233a;
-	--muted: #6e6a86;
-	--subtle: #908caa;
-	--text: #e0def4;
-	--love: #eb6f92;
-	--gold: #f6c177;
-	--rose: #ebbcba;
-	--pine: #31748f;
-	--foam: #9ccfd8;
-	--iris: #c4a7e7;
-	--highlightLow: #21202e;
-	--highlightMed: #403d52;
-	--highlightHigh: #524f67;
+    --base: #191724;
+    --surface: #1f1d2e;
+    --overlay: #26233a;
+    --muted: #6e6a86;
+    --subtle: #908caa;
+    --text: #e0def4;
+    --love: #eb6f92;
+    --gold: #f6c177;
+    --rose: #ebbcba;
+    --pine: #31748f;
+    --foam: #9ccfd8;
+    --iris: #c4a7e7;
+    --highlightLow: #21202e;
+    --highlightMed: #403d52;
+    --highlightHigh: #524f67;
 }
 
 @font-face {
-	font-family: "0xPropo";
-	src: url("/fonts/0xPropo-Medium.woff2");
-	font-weight: 400;
-	font-style: "normal";
-	font-display: "swap";
+    font-family: "0xPropo";
+    src: url("/fonts/0xPropo-Medium.woff2");
+    font-weight: 400;
+    font-style: "normal";
+    font-display: "swap";
 }
 
 html {
-	max-width: 768px;
-	margin: auto;
+    max-width: 768px;
+    margin: auto;
 
-	font-family: "0xPropo", sans-serif;
-	font-size: 16px;
-	background-color: var(--base);
-	color: var(--text);
+    font-family: "0xPropo", sans-serif;
+    font-size: 16px;
+    background-color: var(--base);
+    color: var(--text);
 }
 
 h1 {
-	color: var(--iris);
+    color: var(--iris);
 }
 
 a {
-	color: var(--foam);
+    color: var(--foam);
 }
