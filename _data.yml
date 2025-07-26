@@ -1,1 +1,10 @@
 layout: layout.vto
+
+author:
+  name: Peter Jun Park
+
+footer_links:
+  - text: colours
+    url: https://rosepinetheme.com
+  - text: font
+    url: https://github.com/0xType/0xPropo

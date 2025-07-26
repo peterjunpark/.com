@@ -1,0 +1,12 @@
+<footer>
+    <span id="copyright">
+        &copy; {{ new Date().getFullYear() }} {{ author.name }}
+    </span>
+
+    {{ for footer_link of footer_links }}
+    <span> | </span>
+    <a href="{{ footer_link.url }}" target="_blank" rel="noopener noreferrer">
+        {{ footer_link.text }}
+    </a>
+    {{ /for }}
+</footer>
