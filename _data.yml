@@ -8,3 +8,7 @@ footer_links:
     url: https://rosepinetheme.com
   - text: font
     url: https://github.com/0xType/0xPropo
+
+transformImages:
+  - resize: [40]
+    matches: -cursor
