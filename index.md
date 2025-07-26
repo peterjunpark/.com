@@ -4,11 +4,13 @@ title: Peter Jun Park
 
 # # peterjunpark
 
-Hello.
+Hi. My name's Peter.
 
 ## ## links
 
 - [GitHub](https://github.com/peterjunpark)
+
+- [LinkedIn](https://linkedin.com/in/peterjunpark)
 
 ## ## silly projects
 
