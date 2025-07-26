@@ -27,11 +27,11 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html {
-    font-size: 100%;
-    /* Use % for better accessibility */
+    font-size: 62.5%;
     scroll-behavior: smooth;
     background-color: var(--base);
     cursor: url("/cursors/rose-pine-left_ptr-cursor.png") 8 8, auto;
@@ -42,24 +42,21 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    max-width: 768px;
-    min-height: 100vh;
+    max-width: 76.8rem;
+    height: 100vh;
     margin-inline: auto;
-    padding: 1rem 2rem;
+    padding-block: 2rem 3rem;
     font-family: "0xPropo", sans-serif;
+    font-size: 1.6rem;
     color: var(--text);
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 h1,
 h2 {
     color: var(--iris);
-    margin-block-start: 2rem;
-}
-
-p,
-li {
-    font-size: 1.2rem;
+    margin-block-start: 3.2rem;
+    margin-block-end: 1.6rem;
 }
 
 li::marker {
@@ -70,13 +67,12 @@ li::marker {
 a {
     color: var(--foam);
     text-decoration: none;
-    transition: color 0.4s ease-in-out;
+    transition: color 0.25s ease-in-out;
 }
 
 a:hover,
 a:focus-visible {
     color: var(--gold);
-    text-decoration: underline;
     cursor: url("/cursors/rose-pine-hand2-cursor.png") 16 8, pointer;
     outline: none;
 }
