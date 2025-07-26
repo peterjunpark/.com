@@ -24,20 +24,56 @@
     font-display: "swap";
 }
 
-html {
-    max-width: 768px;
-    margin: auto;
-
-    font-family: "0xPropo", sans-serif;
-    font-size: 16px;
-    background-color: var(--base);
-    color: var(--text);
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-h1 {
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    background-color: var(--base);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 768px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 2rem;
+    font-family: "0xPropo", sans-serif;
+    color: var(--text);
+    line-height: 1.5;
+}
+
+h1,
+h2 {
     color: var(--iris);
+    padding-top: 2rem;
+}
+
+p,
+li {
+    font-size: 1.2rem;
+}
+
+li::marker {
+    content: "- ";
+    color: var(--pine);
+    font-size: 1.2rem;
 }
 
 a {
     color: var(--foam);
+    text-decoration: none;
+    transition: color 0.4s ease-in-out;
+}
+
+a:hover {
+    color: var(--gold);
+    text-decoration: underline;
 }

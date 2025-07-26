@@ -2,11 +2,20 @@
 title: Peter Jun Park
 ---
 
-# peterjunpark
+# # peterjunpark
 
 Hello.
 
-## Random stuff
+## ## links
 
-- [Y](https://github.com/peterjunpark/y)
-- crosswordfish
+- [GitHub](https://github.com/peterjunpark)
+
+## ## silly projects
+
+- [Y](https://twytter-1.vercel.app/) ([repo](https://github.com/peterjunpark/y))
+
+- [crosswordfish](https://crosswordfish.vercel.app) ([repo](https://github.com/peterjunpark/crosswordfish))
+
+## ## contact
+
+- Email: email\<at>peterjunpark.com
