@@ -1,19 +1,22 @@
 :root {
-    --base: #191724;
-    --surface: #1f1d2e;
-    --overlay: #26233a;
-    --text: #e0def4;
-    --muted: #6e6a86;
-    --subtle: #908caa;
-    --love: #eb6f92;
-    --gold: #f6c177;
-    --rose: #ebbcba;
-    --pine: #31748f;
-    --foam: #9ccfd8;
-    --iris: #c4a7e7;
-    --highlightLow: #21202e;
-    --highlightMed: #403d52;
-    --highlightHigh: #524f67;
+    --foreground: #cdcdcd;
+    --background: #141415;
+    --color0:     #252530;
+    --color8:     #606079;
+    --color1:     #d8647e;
+    --color9:     #e08398;
+    --color2:     #7fa563;
+    --color10:    #99b782;
+    --color3:     #f3be7c;
+    --color11:    #f5cb96;
+    --color4:     #6e94b2;
+    --color12:    #8ba9c1;
+    --color5:     #bb9dbd;
+    --color13:    #c9b1ca;
+    --color6:     #aeaed1;
+    --color14:    #bebeda;
+    --color7:     #cdcdcd;
+    --color15:    #d7d7d7;
 }
 
 @font-face {
@@ -33,7 +36,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    background-color: var(--base);
+    background-color: var(--background);
     cursor: url("/cursors/rose-pine-left_ptr-cursor.png") 8 8, auto;
 }
 
@@ -48,31 +51,32 @@ body {
     padding-block: 2rem 3rem;
     font-family: "0xPropo", sans-serif;
     font-size: 1.6rem;
-    color: var(--text);
+    color: var(--foreground);
     line-height: 1.8;
 }
 
 h1,
 h2 {
-    color: var(--iris);
+    color: var(--color12);
     margin-block-start: 3.2rem;
-    margin-block-end: 1.6rem;
+    margin-block-end: 1.2rem;
 }
 
 li::marker {
     content: "- ";
-    color: var(--pine);
+    color: var(--color4);
 }
 
 a {
-    color: var(--foam);
+    color: var(--color5);
     text-decoration: none;
-    transition: color 0.25s ease-in-out;
+    transition: color 0.2s ease-in-out;
 }
 
 a:hover,
 a:focus-visible {
-    color: var(--gold);
+    color: var(--color3);
     cursor: url("/cursors/rose-pine-hand2-cursor.png") 16 8, pointer;
+    text-decoration: underline;
     outline: none;
 }
