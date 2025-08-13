@@ -6,10 +6,6 @@ author:
 footer_links:
   - text: source
     url: https://github.com/peterjunpark/.com
-  - text: colours
-    url: https://rosepinetheme.com
-  - text: font
-    url: https://github.com/0xType/0xPropo
 
 transformImages:
   - resize: [40]
