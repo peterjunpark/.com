@@ -1,12 +1,12 @@
 layout: layout.vto
 
 author:
-  name: Peter Jun Park
+    name: Peter Jun Park
 
 footer_links:
-  - text: source
-    url: https://github.com/peterjunpark/.com
+    - text: source
+      url: https://github.com/peterjunpark/.com
 
 transformImages:
-  - resize: [40]
-    matches: -cursor
+    - resize: [40]
+      matches: -cursor
