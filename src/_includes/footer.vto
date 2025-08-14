@@ -8,9 +8,9 @@
 
         {{ for footer_link of footer_links }}
             <span> | </span>
-            <a href="{{ footer_link.url }}" target="_blank" rel="noopener noreferrer">
-                {{ footer_link.text }}
-            </a>
+            <a href="{{ footer_link.url }}" target="_blank" rel="noopener noreferrer">{{
+                footer_link.text
+            }}</a>
         {{ /for }}
     </small>
 </footer>
