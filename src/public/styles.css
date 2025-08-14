@@ -50,33 +50,51 @@ body {
     margin-inline: auto;
     padding-block: 2rem 3rem;
     font-family: "0xPropo", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--foreground);
     line-height: 1.8;
 }
 
-h1,
+h1 {
+    color: var(--color4);
+    margin-block-start: 3.2rem;
+    margin-block-end: 1.2rem;
+}
+
 h2 {
     color: var(--color12);
     margin-block-start: 3.2rem;
     margin-block-end: 1.2rem;
 }
 
+ul {
+    padding-left: 1.2em;
+}
+
+li {
+    padding-top: 0.2em;
+    padding-bottom: 0.4em;
+}
+
 li::marker {
     content: "- ";
-    color: var(--color4);
+    color: var(--color8);
 }
 
 a {
-    color: var(--color5);
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
+    color: var(--foreground);
+    text-decoration: underline;
+    transition: color 0.15s ease-in-out;
 }
 
 a:hover,
 a:focus-visible {
-    color: var(--color3);
+    color: var(--color5);
     cursor: url("/cursors/rose-pine-hand2-cursor.png") 16 8, pointer;
-    text-decoration: underline;
     outline: none;
+}
+
+::selection {
+    background-color: var(--color3);
+    color: var(--color0);
 }

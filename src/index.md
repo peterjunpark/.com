@@ -2,23 +2,28 @@
 title: Peter Jun Park
 ---
 
-# peterjunpark
+# Peter Jun Park
 
-Hi. My name's Peter.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+et dolore magna aliqua. I still haven't come up with something to put here. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. I'll fill do
+this later. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum.
 
-## links
+## Links
 
 - [GitHub](https://github.com/peterjunpark)
 
 - [LinkedIn](https://linkedin.com/in/peterjunpark)
 
-## silly projects
+## Silly projects
 
 - [Y](https://twytter-1.vercel.app/) ([repo](https://github.com/peterjunpark/y))
 
 - [crosswordfish](https://crosswordfish.vercel.app)
   ([repo](https://github.com/peterjunpark/crosswordfish))
 
-## contact
+## Contact
 
-- Email: email\<at>peterjunpark.com
+- Email: email{at}peterjunpark.com
