@@ -2,6 +2,7 @@ import lume from "lume/mod.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 
 const site = lume({
+    src: "./src",
     // Don't empty _site/ before the build.
     emptyDest: false,
     server: {
