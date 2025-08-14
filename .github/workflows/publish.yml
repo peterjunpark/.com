@@ -1,36 +1,42 @@
 name: Publish on GitHub Pages
 
 on:
-  push:
-    branches: [main]
+    push:
+        branches: [main]
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+    contents: read
+    pages: write
+    id-token: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Clone repository
-        uses: actions/checkout@v4
+        steps:
+            - name: Clone repository
+              uses: actions/checkout@v4
 
-      - name: Setup Deno environment
-        uses: denoland/setup-deno@v2
+            - name: Setup Deno environment
+              uses: denoland/setup-deno@v2
 
-      - name: Build site
-        run: deno task build
+            - name: Setup Typst
+              uses: typst-community/setup-typst@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+            - name: Compile resume.typst
+              run: deno task resume:compile
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "_site"
+            - name: Build site
+              run: deno task build
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+            - name: Setup Pages
+              uses: actions/configure-pages@v5
+
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v3
+              with:
+                  path: "_site"
+
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4

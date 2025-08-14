@@ -5,8 +5,10 @@
     },
     "tasks": {
         "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
-        "build": "deno task lume",
-        "serve": "deno task lume -s"
+        "build": "deno task resume:compile && deno task lume",
+        "serve": "deno task resume:watch && deno task lume -s",
+        "resume:compile": "mkdir -p _site/downloads && typst compile resume.typ _site/downloads/peterjunpark-resume.pdf",
+        "resume:watch": "mkdir -p _site/downloads && typst watch resume.typ _site/downloads/peterjunpark-resume.pdf --open xdg-open"
     },
     "compilerOptions": {
         "types": [
