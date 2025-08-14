@@ -4,6 +4,8 @@ author:
     name: Peter Jun Park
 
 footer_links:
+    - text: resume
+      url: downloads/peterjunpark-resume.pdf
     - text: source
       url: https://github.com/peterjunpark/.com
 
