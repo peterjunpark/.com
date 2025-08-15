@@ -10,10 +10,7 @@ const site = lume({
     },
 });
 
-site.use(transformImages());
-
-site.add("public/styles.css", "styles.css");
-site.add("public/cursors", "cursors");
-site.add("public/fonts", "fonts");
+site.use(transformImages())
+    .add("_static", ".");
 
 export default site;
