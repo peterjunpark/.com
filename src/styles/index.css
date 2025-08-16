@@ -1,0 +1,89 @@
+@layer base, utils, components;
+
+/* WebTUI base */
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/base.css";
+/* WebTUI utils */
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/utils/box.css";
+/* WebTUI components */
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/components/badge.css";
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/components/button.css";
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/components/typography.css";
+
+@font-face {
+    font-family: "CommitMono";
+    src: url("/fonts/CommitMono VariableFont.woff2");
+    font-weight: 400;
+    font-feature-settings: "cv01", "cv02", "cv04", "cv06";
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Symbols Nerd Font";
+    src: url("/fonts/SymbolsNerdFont-Regular.woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@layer base {
+    :root {
+        --bg: #141415;
+        --fg: #cdcdcd;
+        --floatBorder: #878787;
+        --line: #252530;
+        --comment: #606079;
+        --builtin: #b4d4cf;
+        --func: #c48282;
+        --string: #e8b589;
+        --number: #e0a363;
+        --property: #c3c3d5;
+        --constant: #aeaed1;
+        --parameter: #bb9dbd;
+        --visual: #333738;
+        --error: #d8647e;
+        --warning: #f3be7c;
+        --hint: #7e98e8;
+        --operator: #90a0b5;
+        --keyword: #6e94b2;
+        --type: #9bb4bc;
+        --search: #405065;
+        --plus: #7fa563;
+        --delta: #f3be7c;
+        /* WebTUI variables */
+        --font-family: "CommitMono", monospace, "Symbols Nerd Font";
+        --font-size: 1.15rem;
+        --background0: var(--bg);
+        --background1: var(--line);
+        --background2: var(--search);
+        --background3: var(--comment);
+        --foreground0: var(--constant);
+        --foreground1: var(--fg);
+        --box-border-color: var(--floatBorder);
+        --table-border-color: var(--floatBorder);
+        --separator-color: var(--floatBorder);
+    }
+    html {
+        /* scroll-behavior: smooth; */
+        cursor: url("/cursors/rose-pine-left_ptr-cursor.png") 8 8, auto;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 100ch;
+        height: 100vh;
+        margin-inline: auto;
+    }
+    a {
+        color: var(--parameter);
+    }
+    a:hover,
+    a:focus-visible {
+        color: var(--string);
+        cursor: url("/cursors/rose-pine-hand2-cursor.png") 16 8, pointer;
+        outline: none;
+    }
+	::selection {
+		background-color: var(--visual)
+	}
+}
