@@ -1,13 +1,13 @@
 @layer base, utils, components;
 
 /* WebTUI base */
-@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/base.css";
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.1.5/dist/base.css";
 /* WebTUI utils */
-@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/utils/box.css";
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.1.5/dist/utils/box.css";
 /* WebTUI components */
-@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/components/badge.css";
-@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/components/button.css";
-@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.0.5/dist/components/typography.css";
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.1.5/dist/components/badge.css";
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.1.5/dist/components/button.css";
+@import "https://cdn.jsdelivr.net/npm/@webtui/css@0.1.5/dist/components/typography.css";
 
 @font-face {
     font-family: "CommitMono";
@@ -83,7 +83,43 @@
         cursor: url("/cursors/rose-pine-hand2-cursor.png") 16 8, pointer;
         outline: none;
     }
-	::selection {
-		background-color: var(--visual)
-	}
+    ::selection {
+        background-color: var(--visual);
+    }
+    main {
+        padding: 0lh 1ch;
+        padding-top: 1lh;
+        display: flex;
+        flex-direction: column;
+        gap: 1lh;
+    }
+    #cmdline {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 1ch;
+    }
+    #mode {
+        color: var(--number);
+    }
+    #statusline {
+        background-color: var(--line);
+    }
+    h1::before {
+        content: "# ";
+    }
+    h2::before {
+        content: "## ";
+    }
+    h3::before {
+        content: "### ";
+    }
+    h4::before {
+        content: "#### ";
+    }
+    h5::before {
+        content: "##### ";
+    }
+    h6::before {
+        content: "###### ";
+    }
 }
