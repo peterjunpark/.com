@@ -7,10 +7,23 @@ const site = lume({
     // Don't empty _site/ before the build.
     emptyDest: false,
     server: { port: 6969 },
+}, {
+    markdown: {
+        rules: {
+            link_open: function (tokens, idx, options, env, self) {
+                // Get the token for the <a> tag
+                const token = tokens[idx];
+                // Add the contenteditable="false" attribute
+                token.attrSet("contenteditable", "false");
+                return self.renderToken(tokens, idx, options);
+            },
+        },
+    },
 });
 
 site.use(transformImages())
     .add("styles")
+    .add("scripts")
     .add("public/cursors", "cursors")
     .add("public/fonts", "fonts");
 

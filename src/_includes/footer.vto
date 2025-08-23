@@ -1,14 +1,20 @@
 <footer>
-    <small>
-        <span id="copyright">
-            󰗦 {{ new Date().getFullYear() }} {{ author.name }}
-        </span>
+    <div id="statusline">
+        {{ url }}
+    </div>
+    <div id="cmdline">
+        <span id="mode"></span>
+        <div>
+            <span id="copyright">
+                󰗦 {{ new Date().getFullYear() }} {{ author.name }}
+            </span>
 
-        {{ for footer_link of footer_links }}
-            <span> | </span>
-            <a href="{{ footer_link.url }}" target="_blank" rel="noopener noreferrer">{{
-                footer_link.text
-            }}</a>
-        {{ /for }}
-    </small>
+            {{ for footer_link of footer_links }}
+                <span> | </span>
+                <a href="{{ footer_link.url }}" target="_blank" rel="noopener noreferrer">{{
+                    footer_link.text
+                }}</a>
+            {{ /for }}
+        </div>
+    </div>
 </footer>
